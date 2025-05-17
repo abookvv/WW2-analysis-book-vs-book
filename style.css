@@ -108,25 +108,6 @@ nav a:hover {
   border-bottom: 1px solid #eee;
 }
 
-/*Для разворачивающегося текста*/
-
-.expandable-link {
-  color: #3f557a;
-  cursor: pointer;
-  text-decoration: underline;
-  user-select: none;
-}
-
-.expandable-text {
-  margin-top: 8px;
-  display: none;
-  font-size: 14px;
-  color: #333;
-  border-left: 3px solid #3f557a;
-  padding-left: 10px;
-}
-
-
 /*Для карточек*/
 .cards-container {
   display: flex;
@@ -430,6 +411,50 @@ tbody tr:hover {
   transition: background-color 0.3s ease;
 }
 /*Конец стилей для таблиц*/
+
+/*Стиль для раскрывающихся блоков*/
+.expandable-link {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 6px 14px;
+  font-size: 14px;
+  color: #2980b9;
+  background-color: #ecf0f1;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+.expandable-link:hover {
+  background-color: #2980b9;
+  color: white;
+  border-color: #2980b9;
+}
+.expandable-text {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  margin-bottom: 20px;
+  background: white;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  border-left: 4px solid #3498db;
+  border-radius: 0 6px 6px 0;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+.expandable-text.show {
+  max-height: 1000px; 
+  padding: 10px 15px; 
+}
+ .expandable-text img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.1);
+}  
+/*Конец стиля для раскрывающихся блоков*/
+
 /*Cтили для Китая */
 
 .china-perspective {
