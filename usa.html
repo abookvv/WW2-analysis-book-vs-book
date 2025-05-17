@@ -20,67 +20,205 @@
         <a href="china.html">Китай</a>
     </nav>
     
-    <div class="container">
+    <div class="china-perspective">
         <section class="content-section">
             <h2>Особенности американского подхода</h2>
-            <p>В американской образовательной системе Вторая мировая война занимает центральное место в курсах истории XX века. Основные акценты расставляются следующим образом:</p>
-            
+            <p>Подводочка</p>
+            <div class="toc">
+                <h2 class="toc-title">Оглавление</h2>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="#section1" class="toc-link">Начало войны (когда Германия напала на Польшу)</a></li>
+                    <li class="toc-item"><a href="#section2" class="toc-link">Как показана немецкая армия и Гитлер? (на примере битвы при Дюнкерке)</a></li>
+                    <li class="toc-item"><a href="#section3" class="toc-link">Коренной перелом в противостоянии нацизму (описание Сталинградской битвы)</a></li>
+                    <li class="toc-item"><a href="#section4" class="toc-link">Все-таки кто освободил Берлин?</a></li>
+                    <li class="toc-item"><a href="#section5" class="toc-link">Сброс бомб США на Хиросиму и как после этого иллюстрируется США</a></li>
+                    <li class="toc-item"><a href="#section6" class="toc-link">О чем говорят в Американских учебниках, но молчат в наших</a></li>
+                    <li class="toc-item"><a href="#section7" class="toc-link">Пропоганда в цифрах, или их отсутствие</a></li>
+                </ul>
+            </div>
+
             <div class="highlight-box">
                 <p><strong>Ключевой тезис:</strong> Война представлена как борьба демократии против тоталитаризма, где США выступили в роли "арсенала демократии" и освободителя.</p>
             </div>
+
+            <span class="expandable-link" id="toggleExpand">развернуть текст оригинального источника</span>
+            <div class="expandable-text" id="expandableContent">
+            <p>Здесь расположен дополнительный текст оригинального источника, который изначально скрыт. Этот текст появляется при нажатии на ссылку и исчезает при повторном нажатии.</p>
+            </div>
+            <script>
+            const toggleLink = document.getElementById('toggleExpand');
+            const expandableContent = document.getElementById('expandableContent');
+            toggleLink.addEventListener('click', () => {
+                const isVisible = expandableContent.style.display === 'block';
+                if (isVisible) {
+                expandableContent.style.display = 'none';
+                toggleLink.textContent = 'развернуть текст оригинального источника';
+                } else {
+                expandableContent.style.display = 'block';
+                toggleLink.textContent = 'свернуть текст оригинального источника';
+                }
+            });
+            </script>
             
-            <h3>Основные темы преподавания:</h3>
-            <ul>
-                <li>Изоляционизм 1930-х годов и его преодоление</li>
-                <li>Нападение на Перл-Харбор (7 декабря 1941) как "день позора"</li>
-                <li>Военные действия на двух фронтах (Тихий океан и Европа)</li>
-                <li>Роль промышленности и тыла ("Клепальщица Рози")</li>
-                <li>Манхэттенский проект и атомные бомбардировки</li>
-                <li>Создание ООН и новый мировой порядок</li>
-            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2 id="section1">Начало войны (когда Германия напала на Польшу)</h2>
+
+            <h2 id="section2">Как показана немецкая армия и Гитлер? (на примере битвы при Дюнкерке)</h2>
+            <div class="section-placeholder">
+                Содержание раздела будет добавлено позже.
+            </div>
+
+            <h2 id="section3">Как показана немецкая армия и Гитлер? (на примере битвы при Дюнкерке)</h2>
+            <div class="section-placeholder">
+                Содержание раздела будет добавлено позже.
+            </div>
+
+            <h2 id="section4">Как показана немецкая армия и Гитлер? (на примере битвы при Дюнкерке)</h2>
+            <div class="section-placeholder">
+                Содержание раздела будет добавлено позже.
+            </div>
+
+            <h2 id="section5">Как показана немецкая армия и Гитлер? (на примере битвы при Дюнкерке)</h2>
+            <div class="section-placeholder">
+                Содержание раздела будет добавлено позже.
+            </div>
+
+            <h2 id="section6">Как показана немецкая армия и Гитлер? (на примере битвы при Дюнкерке)</h2>
+            <div class="section-placeholder">
+                Содержание раздела будет добавлено позже.
+            </div>
+
+            <h2 id="section7">Пропоганда в цифрах, или их отсутствие</h2>
+            <table>
+            <thead>
+                <tr>
+                <th>События↓\Учебники→</th>
+                <th>American History</th>
+                <th>Khan Academy</th>
+                <th>Cold War</th>
+                <th>World History</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>Перл Харбор</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <td>Battle of the Bulge</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <td>Сталинградская битва</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <td>Высадка в Нормандии</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+            </tbody>
+            </table>
+
         </section>
         
-        <section class="content-section">
-            <h2>Визуальные материалы</h2>
-            <div class="image-gallery">
-                <div class="gallery-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Attack_on_Pearl_Harbor_Japanese_planes_view.jpg/800px-Attack_on_Pearl_Harbor_Japanese_planes_view.jpg" alt="Перл-Харбор">
-                    <div class="gallery-caption">Нападение на Перл-Харбор</div>
+
+        <div class="sources-header">
+            <h3 style="color: white">Источники информации</h3>
+        </div>
+        
+        <div class="source-items">
+            <div class="source-item">
+                <div class="source-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="#b2d5f5" d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                    </svg>
                 </div>
-                <div class="gallery-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/NormandySupply.jpg/800px-NormandySupply.jpg" alt="Высадка в Нормандии">
-                    <div class="gallery-caption">Американские войска в Нормандии</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Rosie_the_Riveter_%28Vultee%29.jpg/800px-Rosie_the_Riveter_%28Vultee%29.jpg" alt="Клепальщица Рози">
-                    <div class="gallery-caption">"Клепальщица Рози" - символ работающих женщин</div>
+                <div class="source-content">
+                    <h4 class="source-title">1. The Cold War: Superpower tensions and rivalries</h4>
+                    <p class="source-author">David G. Williamson</p>
+                    <p class="source-edition">Second Edition - Hodder 2015</p>
+                    <a href="https://ebooks.papacambridge.com/directories/IB/IB-ebooks/upload/the%20cold%20war%20(superpower%20tensions%20and%20rivalries)%20-%20david%20g-%20williamson%20-%20second%20edition%20-%20hodder%202015.pdf" 
+                    target="_blank" 
+                    class="source-link">
+                        Читать полный текст
+                        <span class="link-arrow">→</span>
+                    </a>
                 </div>
             </div>
-        </section>
-        
-        <section class="content-section">
-            <h2>Спорные вопросы</h2>
-            <p>В американских учебниках особое внимание уделяется дискуссионным темам:</p>
-            
-            <h3>1. Атомные бомбардировки</h3>
-            <p>Преподаётся как сложный моральный выбор между необходимостью спасти жизни американских солдат и гуманностью.</p>
-            
-            <h3>2. Интернирование японцев</h3>
-            <p>Рассматривается как пример нарушения гражданских свобод во время войны.</p>
-            
-            <h3>3. Ленд-лиз и помощь СССР</h3>
-            <p>Анализируется в контексте сложных союзнических отношений и начала Холодной войны.</p>
-        </section>
-        
-        <div class="source-box">
-            <h3>Источник информации:</h3>
-            <p>The Cold War: Superpower tensions and rivalries - David G. Williamson</p>
-            <p>Second Edition - Hodder 2015</p>
-            <a href="https://ebooks.papacambridge.com/directories/IB/IB-ebooks/upload/the%20cold%20war%20(superpower%20tensions%20and%20rivalries)%20-%20david%20g-%20williamson%20-%20second%20edition%20-%20hodder%202015.pdf" target="_blank">
-                Полный текст источника
-            </a>
+            <div class="source-item">
+                <div class="source-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="#b2d5f5" d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                    </svg>
+                </div>
+                <div class="source-content">
+                    <h4 class="source-title">2. American History</h4>
+                    <p class="source-author">McDougal Littell</p>
+                    <p class="source-edition">Robert Dallek, Juses Garcia, Donna M. Ogle, C. Fredericj Risinger</p>
+                    <a href="https://psv4.userapi.com/s/v1/d/hZz4C-f_TLC5a9Mht0LYvq-uvuI6GUzd_gSUAMf2WBo3QUd5OtXFabYYvqv8SMhe8U0uRW7WTqoZ83QDbyFOYf2f4vJpTxfhPgKujB10rAvzwcUj/McDougal_Littell_American_History__Student_Textbook_2008.pdf" 
+                    target="_blank" 
+                    class="source-link">
+                        Читать полный текст
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+            <div class="source-item">
+                <div class="source-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="#b2d5f5" d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                    </svg>
+                </div>
+                <div class="source-content">
+                    <h4 class="source-title">3. Khan Academy</h4>
+                    <p class="source-author">World History</p>
+                    <p class="source-edition">Free online course: American school program</p>
+                    <a href="https://www.khanacademy.org/humanities/world-history" 
+                    target="_blank" 
+                    class="source-link">
+                        Читать полный текст
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+            <div class="source-item">
+                <div class="source-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="#b2d5f5" d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                    </svg>
+                </div>
+                <div class="source-content">
+                    <h4 class="source-title">4. World History, Volume 2: from 1400</h4>
+                    <p class="source-author">Ann Kordas, Ryan J. Lynch, Brooke Nelson, Julie Tatlock</p>
+                    <p class="source-edition">OpenStax, Ruce University</p>
+                    <a href="https://assets.openstax.org/oscms-prodcms/media/documents/World_History_Volume_2-WEB_LdwoslB.pdf?_gl=1*3yf21t*_gcl_au*MTEyNDM0NDkxMS4xNzQ3Mjk2NzYy*_ga*MTU5NzM3Mjc3NC4xNzQ3Mjk2NzYy*_ga_T746F8B0QC*czE3NDcyOTY3NjEkbzEkZzEkdDE3NDcyOTY4NTEkajYwJGwwJGgw" 
+                    target="_blank" 
+                    class="source-link">
+                        Читать полный текст
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+            </div>
         </div>
+
     </div>
+
+    
     
     <footer>
         <p>© 2023 Проект по сравнительной истории | Все права защищены</p>
