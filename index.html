@@ -4,205 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Изучение Второй мировой войны</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --brown: rgba(81, 53, 39, 0.8); /* с прозрачностью */
-            --dark-blue: #3f557a;
-            --medium-blue: #5f7da3;
-            --light-blue: #88aacf;
-            --lightest-blue: #b2d5f5;
-        }
-        
-        body {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
-        }
-        
-        header {
-            background: linear-gradient(var(--brown), var(--brown)), 
-                        url('https://images.unsplash.com/photo-1574786351749-7453a5c2d5c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 4rem 0;
-            text-align: center;
-        }
-        
-        h1, h2, h3 {
-            margin: 0;
-            font-weight: 700;
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        }
-        
-        .subtitle {
-            font-size: 1.2rem;
-            margin-top: 1rem;
-            font-weight: 400;
-        }
-        
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: var(--dark-blue);
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.8rem 1.5rem;
-            margin: 0 0.5rem;
-            border-radius: 5px;
-            transition: all 0.3s;
-            font-weight: 500;
-        }
-        
-        nav a:hover {
-            background-color: var(--medium-blue);
-        }
-        
-        .current-page {
-            background-color: var(--light-blue);
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-        }
-        
-        .project-description {
-            background-color: white;
-            padding: 2rem;
-            border-radius: 8px;
-            margin-bottom: 3rem;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .cards-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-        
-        .card {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .card-image {
-            height: 160px;
-            width: 100%;
-            object-fit: cover;
-        }
-        
-        .country-card .card-image {
-            background-color: var(--light-blue);
-        }
-        
-        .author-card .card-image {
-            background-color: var(--lightest-blue);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--dark-blue);
-            font-size: 3rem;
-        }
-        
-        .card-content {
-            padding: 1.5rem;
-        }
-        
-        .card-content h3 {
-            color: var(--dark-blue);
-            margin-top: 0;
-            margin-bottom: 1rem;
-        }
-        
-        .btn {
-            display: inline-block;
-            background-color: var(--medium-blue);
-            color: white;
-            padding: 0.6rem 1.2rem;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        
-        .btn:hover {
-            background-color: var(--dark-blue);
-        }
-        
-        footer {
-            background-color: var(--dark-blue);
-            color: white;
-            padding: 2rem 0;
-            margin-top: 3rem;
-        }
-        
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            padding: 0 2rem;
-        }
-        
-        .footer-section h3 {
-            color: var(--lightest-blue);
-            margin-top: 0;
-            margin-bottom: 1rem;
-        }
-        
-        .footer-bottom {
-            text-align: center;
-            padding-top: 2rem;
-            margin-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-            
-            nav {
-                flex-wrap: wrap;
-            }
-            
-            nav a {
-                padding: 0.6rem 1rem;
-                margin: 0.3rem;
-                font-size: 0.9rem;
-            }
-            
-            .container {
-                padding: 0 1.5rem;
-            }
-        }
-    </style>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header>
@@ -227,7 +29,7 @@
         <h2>Страны исследования</h2>
         <div class="cards-container">
             <div class="card country-card">
-                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1528728329032-2972f65dfb3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="card-image"><img src="images/germany_main.jpg" style="height: 100%;"></div>
                 <div class="card-content">
                     <h3>Германия</h3>
                     <p>Как страна-агрессор преподаёт историю войны? Особенности немецкого подхода к исторической памяти.</p>
@@ -236,7 +38,7 @@
             </div>
             
             <div class="card country-card">
-                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="card-image"><img src="images/china_main.jpg"></div>
                 <div class="card-content">
                     <h3>Китай</h3>
                     <p>Азиатско-Тихоокеанский театр военных действий. Как в Китае преподают историю войны с Японией?</p>
@@ -245,7 +47,7 @@
             </div>
             
             <div class="card country-card">
-                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1580341286576-b0dc11ad6385?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="card-image"><img src="images/usa_main.jpg"></div>
                 <div class="card-content">
                     <h3>США</h3>
                     <p>Американский взгляд на войну: от Перл-Харбора до Хиросимы. Как преподают историю войны в Штатах?</p>
@@ -254,7 +56,7 @@
             </div>
             
             <div class="card country-card">
-                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1486299267070-83823f5448dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="card-image"><img src="images/britain_main.jpg"></div>
                 <div class="card-content">
                     <h3>Британия</h3>
                     <p>Британская историография войны: от "Странной войны" до дня Победы. Особенности преподавания.</p>
@@ -275,7 +77,7 @@
             </div>
             
             <div class="card author-card">
-                <div class="card-image"></div>
+                <div class="card-image"><img src="images/Ксюша.jpg" alt="Фото Ксюши"></div>
                 <div class="card-content">
                     <h3>Ксюша</h3>
                     <p>Материал по истории Великобритании (а именно, Англии)</p>
@@ -284,7 +86,7 @@
             </div>
             
             <div class="card">
-                <div class="card-image"><img src="images/Ника.jpg" alt="Фото Ани"></div>
+                <div class="card-image"><img src="images/Ника.jpg" alt="Фото Вероники"></div>
                 <div class="card-content">
                     <h3>Вероника</h3>
                     <p>Материал по истории Германии.</p>
@@ -292,7 +94,7 @@
             </div>
             
             <div class="card">
-                <div class="card-image"><img src="images/Марго.jpg" alt="Фото Ани"></div>
+                <div class="card-image"><img src="images/Марго.jpg" alt="Фото Маргориты"></div>
                 <div class="card-content">
                     <h3>Маргарита</h3>
                     <p>Материал по истории Китая</p>

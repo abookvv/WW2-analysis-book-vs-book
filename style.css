@@ -110,54 +110,63 @@ nav a:hover {
 
 /*Для карточек*/
 .cards-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
 }
 
 .card {
+  background: white;
+  border-radius: 8px;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
+}
+
+.card-image {
+  height:220px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-blue)
+}
+
+.country-card .card-image {
+  background-color: var(--light-blue);
 }
 
 .author-card .card-image {
-  width: 10%;
-  border: 2px solid #a2c5f2;
-  background-color: #d8e7fd;
+  background-color: var(--lightest-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-blue);
+  font-size: 3rem;
+}
+
+.card-image img {
+  max-height: 100%;
+  max-width: auto;
+  width: 105%;
+  object-fit: cover;
 }
 
 .card-content {
-  text-align: center;
+  padding: 1.5rem;
 }
 
 .card-content h3 {
-  margin: 0 0 8px 0;
-  color: #054a91;
-  font-size: 1.25rem;
-}
-
-.card-content p {
-  margin: 4px 0;
-  font-size: 0.95rem;
-  color: #555c6a;
-  line-height: 1.4;
-}
-
-@media (max-width: 100px) {
-  .card {
-    width: 10%;
-    max-width: 10px;
-  }
-
-  .author-card .card-image {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 14px;
-  }
+  color: var(--dark-blue);
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .btn {
@@ -174,6 +183,8 @@ nav a:hover {
   background-color: var(--dark-blue);
 }
 
+
+/*Шапка снизу*/
 footer {
   background-color: var(--dark-blue);
   color: white;
