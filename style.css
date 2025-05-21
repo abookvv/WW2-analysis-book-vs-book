@@ -465,6 +465,41 @@ tbody tr:hover {
 }  
 /*Конец стиля для раскрывающихся блоков*/
 
+/*Buttons*/
+/* #buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 700px;
+}
+.nav-button {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 8px 18px rgba(38, 72, 243, 0.4);
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+  flex: 1;
+  max-width: 280px;
+}
+.nav-button:hover {
+  background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+  box-shadow: 0 12px 24px rgba(38, 72, 243, 0.65);
+  transform: translateY(-3px);
+}
+.nav-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(38, 72, 243, 0.5);
+} */
+
 /*Cтили для Китая */
 .perspective {
   font-family: 'Noto Sans', Arial, sans-serif;
