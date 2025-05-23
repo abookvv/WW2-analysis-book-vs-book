@@ -103,6 +103,104 @@ nav a:hover {
   }
 }
 
+/*главная кнопки с итогами и дневниками*/
+/* Фоновый блок */
+  .highlight-block {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2.5rem 3rem;
+    background: linear-gradient(135deg, #f0f4ff 0%, #b2d5f5 100%);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px #3f557a;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+   /* Колонки внутри блока */
+  .highlight-block > div {
+    flex: 1 1 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px rgba(81, 53, 39, 0.8);
+    transition: box-shadow 0.3s ease;
+  }
+  .highlight-block > div:hover {
+    box-shadow: 0 12px 30px rgba(81, 53, 39, 0.8);
+  }
+  /* Заголовок */
+  .highlight-block h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3f557a;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.3;
+    user-select: none;
+  }
+   /* Кнопки */
+  .highlight-block a.btn {
+    align-self: start;
+    background: #88aacf;
+    background: linear-gradient(135deg, #88aacf 0%, #5f7da3 100%);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding: 14px 32px;
+    border-radius: 50px;
+    box-shadow: 0 6px 12px #3f557a;
+    transition:
+      box-shadow 0.3s ease,
+      transform 0.3s ease,
+      background 0.3s ease;
+    user-select: none;
+  }
+  .highlight-block a.btn:hover {
+    background: linear-gradient(135deg, #88aacf 0%, #5f7da3 100%);
+    box-shadow: 0 10px 20px rgba(85, 99, 193, 0.6);
+    transform: translateY(-3px);
+  }
+  .highlight-block a.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px #3f557a;
+  }
+  /* Контейнеры выравнивание разное */
+  .left-column {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .right-column {
+    align-items: flex-end;
+    text-align: right;
+  }
+  /* Адаптивность */
+  @media (max-width: 670px) {
+    .highlight-block {
+      gap: 40px;
+      padding: 2rem 1.5rem;
+      flex-direction: column;
+      max-width: 95%;
+    }
+    .highlight-block > div {
+      width: 100%;
+      align-items: center !important;
+      text-align: center !important;
+      padding: 2rem 1.5rem;
+    }
+    .highlight-block a.btn {
+      align-self: center !important;
+    }
+    .left-column, .right-column {
+      align-items: center !important;
+      text-align: center !important;
+    }
+  }
+
 /*график*/
 h2.chart-title {
   background: var(--dark-blue);
