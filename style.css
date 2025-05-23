@@ -58,6 +58,7 @@ h1 {
   font-weight: 400;
 }
 
+/* менюшка сверху*/
 nav {
   display: flex;
   justify-content: center;
@@ -67,6 +68,7 @@ nav {
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
 }
 
 nav a {
@@ -85,14 +87,132 @@ nav a:hover {
 
 @media (max-width: 768px) {
   nav {
-    flex-direction: column; /* Изменяем направление на вертикальное */
+    flex-direction: row; /* Изменяем направление на вертикальное */
     align-items: center; /* Центрируем элементы */
+    overflow-x: auto;
   }
   nav a {
     padding: 0.5rem 1rem; /* Уменьшаем отступы для мобильных */
     margin: 0.3rem 0; /* Убираем боковые отступы */
   }
 }
+
+/*график*/
+h2.chart-title {
+  background: var(--dark-blue);
+  color: white;
+  padding: 12px 20px;
+  margin-bottom: 0;
+  border-radius: 8px;
+  user-select: none;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgb(63 85 122 / 0.5);
+  transition: background-color 0.3s ease;
+}
+h2.chart-title:hover {
+  background: var(--medium-blue);
+}
+.chart-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgb(0 0 0 / 0.1);
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+.chart-content {
+  padding: 20px;
+  overflow: hidden;
+  transition: max-height 0.6s ease, padding 0.4s ease;
+}
+.chart-content.collapsed {
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.bar-label {
+  width: 140px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--brown);
+}
+.bar-visual {
+  flex: 1;
+  height: 32px;
+  background: #ececec;
+  border-radius: 16px;
+  position: relative;
+  overflow: visible;
+}
+.bar-fill {
+  height: 100%;
+  border-radius: 16px;
+  transition: width 1s ease;
+}
+.bar-value {
+  margin-left: 12px;
+  min-width: 80px;
+  font-weight: 700;
+  color: var(--brown);
+  font-feature-settings: 'pnum';
+  font-variant-numeric: proportional-nums;
+}
+/* Colors for bars using provided variables */
+.bar-fill.germany { background: linear-gradient(90deg, var(--dark-blue) 0%, var(--light-blue) 100%); }
+.bar-fill.china { background: linear-gradient(90deg, #a33939 0%, #d16161 100%); }
+.bar-fill.uk { background: linear-gradient(90deg, var(--medium-blue) 0%, var(--lightest-blue) 100%); }
+.bar-fill.usa { background: var(--brown); }
+/* Tooltip styling */
+.tooltip {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.75);
+  color: white;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
+.bar-visual:hover .tooltip {
+  opacity: 1;
+}
+/* Range bar for Germany in first chart */
+.range-bar {
+  position: relative;
+  background: #ececec;
+  height: 32px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.range-fill-min {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--medium-blue);
+  border-radius: 16px 0 0 16px;
+  transition: width 1s ease;
+}
+.range-fill-max {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: var(--light-blue);
+  border-radius: 0 16px 16px 0;
+  right: 0;
+  transition: width 1s ease;
+}
+/*конец графиков*/
 
 .current-page {
   background-color: var(--light-blue);
