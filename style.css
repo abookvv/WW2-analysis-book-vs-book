@@ -79,6 +79,7 @@ nav a {
   border-radius: 5px;
   transition: all 0.3s;
   font-weight: 500;
+
 }
 
 nav a:hover {
@@ -87,13 +88,13 @@ nav a:hover {
 
 @media (max-width: 768px) {
   nav {
-    flex-direction: row; /* Изменяем направление на вертикальное */
-    align-items: center; /* Центрируем элементы */
-    overflow-x: auto;
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+    justify-content: space-around; 
   }
   nav a {
     padding: 0.5rem 1rem; /* Уменьшаем отступы для мобильных */
     margin: 0.3rem 0; /* Убираем боковые отступы */
+    flex: 1 1 30%;
   }
 }
 
