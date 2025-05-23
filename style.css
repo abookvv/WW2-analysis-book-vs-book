@@ -512,6 +512,12 @@ table {
   background: white;
 }
 
+.table-container {
+  overflow-x: auto; /* Включает горизонтальную прокрутку */
+  max-width: 100%; /* Ограничивает ширину контейнера */
+  margin: 0 auto; /* Центрирует контейнер */
+}
+
 thead {
   background-color: #3f557a;
   color: #ffffff;
